@@ -118,7 +118,7 @@ function App() {
           <h2 className="text-2xl">Math Memory</h2>
       </nav>
       <div className=" flex flex-col items-center justify-center space-y-5 my-4">
-        <button onClick={shuffleArray} className="w-auto mx-auto px-5 py-2 bg-red-300 rounded-lg">New Game</button>
+        <button onClick={shuffleArray} className="w-auto mx-auto px-5 py-2 bg-red-300 rounded-lg">Shuffle</button>
         <p className="text-lg">Total Flips: {flips}</p>
       </div>
       
@@ -131,7 +131,7 @@ function App() {
           }
       </div>
       </div>
-      {matched == 32 && <Congratulation flips={flips} reShuffle={shuffleArray} />}
+      {matched === 16 && <Congratulation flips={flips} reShuffle={shuffleArray} />}
     </>
   )
 }
